@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bl3ptudwacawr"]
 
-[ext_resource type="Script" uid="uid://bamo5cs77ky3f" path="res://flying_enemy.gd" id="1_a0nct"]
+[ext_resource type="Script" uid="uid://bamo5cs77ky3f" path="res://Scripts/flying_enemy.gd" id="1_a0nct"]
 [ext_resource type="Texture2D" uid="uid://nvhargu0x8fv" path="res://Assets/DarkFantasyEnemies_FREE/Bat/Bat without VFX/Bat-Attack1.png" id="2_27kfy"]
-[ext_resource type="Script" uid="uid://brgrfu4150pd4" path="res://health.gd" id="2_gcrhg"]
+[ext_resource type="Script" uid="uid://brgrfu4150pd4" path="res://Scripts/health.gd" id="2_gcrhg"]
 [ext_resource type="Texture2D" uid="uid://ce0m6umulp0hr" path="res://Assets/DarkFantasyEnemies_FREE/Bat/Bat without VFX/Bat-Die.png" id="3_7tw12"]
 [ext_resource type="Texture2D" uid="uid://1whp2i5wf6na" path="res://Assets/DarkFantasyEnemies_FREE/Bat/Bat without VFX/Bat-Hurt.png" id="4_ky706"]
 [ext_resource type="Texture2D" uid="uid://d2lc5t8eiaj6i" path="res://Assets/DarkFantasyEnemies_FREE/Bat/Bat without VFX/Bat-IdleFly.png" id="5_mdsl2"]
@@ -337,6 +337,7 @@ radius = 9.055386
 radius = 31.016125
 
 [node name="FlyingEnemy" type="CharacterBody2D" unique_id=684365615]
+collision_layer = 2
 script = ExtResource("1_a0nct")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1648674565]

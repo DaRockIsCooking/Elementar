@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bvgpnmh4asnyr"]
+
+[ext_resource type="Script" uid="uid://dklhkhtbcpool" path="res://Combat/Attacks/fireball.gd" id="1_bcxfk"]
+[ext_resource type="Texture2D" uid="uid://qjl06lbckpr7" path="res://Assets/icon.svg" id="2_dtb43"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ykyhg"]
+
+[node name="Fireball" type="Area2D" unique_id=1407584278]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_bcxfk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2086100275]
+scale = Vector2(0.18465228, 0.18691589)
+texture = ExtResource("2_dtb43")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1309446326]
+scale = Vector2(1.1009772, 1.2432432)
+shape = SubResource("CircleShape2D_ykyhg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

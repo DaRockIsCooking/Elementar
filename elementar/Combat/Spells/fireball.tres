@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SpellData" format=3 uid="uid://c323jef6lybem"]
+
+[ext_resource type="Script" uid="uid://csvtm1e453it" path="res://Combat/SpellData.gd" id="1_684jm"]
+[ext_resource type="PackedScene" uid="uid://bvgpnmh4asnyr" path="res://Combat/Attacks/fireball.tscn" id="1_fl4tt"]
+
+[resource]
+script = ExtResource("1_684jm")
+spell_name = "Fire Ball"
+mana_cost = 8.0
+cooldown = 0.8
+attack_scene = ExtResource("1_fl4tt")
+metadata/_custom_type_script = "uid://csvtm1e453it"

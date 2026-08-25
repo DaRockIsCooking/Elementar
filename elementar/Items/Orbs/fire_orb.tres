@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="OrbData" format=3 uid="uid://ccm0ug80a014t"]
+
+[ext_resource type="Script" uid="uid://1tgp3y4pw7bl" path="res://Items/Orbs/OrbData.gd" id="1_u1hyn"]
+
+[resource]
+script = ExtResource("1_u1hyn")
+orb_name = "Fire Orb"
+metadata/_custom_type_script = "uid://1tgp3y4pw7bl"

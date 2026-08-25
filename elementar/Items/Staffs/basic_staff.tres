@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StaffData" format=3 uid="uid://c6x0kyp35t5jh"]
+
+[ext_resource type="Script" uid="uid://r8o8wpqfhw30" path="res://Items/Staffs/StaffData.gd" id="1_7x34f"]
+
+[resource]
+script = ExtResource("1_7x34f")
+staff_name = "Basic Staff"
+metadata/_custom_type_script = "uid://r8o8wpqfhw30"

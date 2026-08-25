@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dle85yghb5c0q"]
+
+[ext_resource type="Script" uid="uid://ciwc38ccmo1ds" path="res://Scripts/orb_pickup.gd" id="1_paeoc"]
+[ext_resource type="Resource" uid="uid://ccm0ug80a014t" path="res://Items/Orbs/fire_orb.tres" id="2_w6ys4"]
+[ext_resource type="Texture2D" uid="uid://qjl06lbckpr7" path="res://Assets/icon.svg" id="3_r4het"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kry3j"]
+
+[node name="OrbPickup" type="Area2D" unique_id=1805864399]
+script = ExtResource("1_paeoc")
+orb = ExtResource("2_w6ys4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=888658166]
+scale = Vector2(0.2264794, 0.23799954)
+texture = ExtResource("3_r4het")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=77613784]
+scale = Vector2(1.6811216, 1.5535617)
+shape = SubResource("CircleShape2D_kry3j")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
