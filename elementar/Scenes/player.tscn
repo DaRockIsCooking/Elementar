@@ -5,6 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://bw02241nepm27" path="res://Assets/male_hero_free/individual_sheets/male_hero-jump.png" id="3_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://dwlyb6wxfp4yy" path="res://Assets/male_hero_free/individual_sheets/male_hero-run.png" id="4_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://cu21xrcrenqa8" path="res://Assets/male_hero_free/individual_sheets/male_hero-walk.png" id="5_dw050"]
+[ext_resource type="Script" uid="uid://p2oe72ll6i5i" path="res://Scripts/PlayerInventory.gd" id="6_x3wgy"]
+[ext_resource type="Script" uid="uid://dsko1433vl70s" path="res://Combat/SpellResolver.gd" id="7_3smsa"]
+[ext_resource type="Resource" uid="uid://c323jef6lybem" path="res://Combat/Spells/fireball.tres" id="8_f1ek2"]
+[ext_resource type="Resource" uid="uid://doxd0fusqqf85" path="res://Combat/Spells/steam_blast.tres" id="9_tx1dd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s1fef"]
 
@@ -297,3 +301,14 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_s1fef")
 animation = &"Jump"
 autoplay = "Idle"
+
+[node name="Inventory" type="Node" parent="." unique_id=1463540194]
+script = ExtResource("6_x3wgy")
+
+[node name="SpellResolver" type="Node" parent="." unique_id=716651911]
+script = ExtResource("7_3smsa")
+fireball = ExtResource("8_f1ek2")
+steam_blast = ExtResource("9_tx1dd")
+
+[node name="CastPoint" type="Marker2D" parent="." unique_id=610844812]
+position = Vector2(14, -2)

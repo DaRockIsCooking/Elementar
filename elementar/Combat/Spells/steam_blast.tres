@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SpellData" format=3 uid="uid://doxd0fusqqf85"]
+
+[ext_resource type="Script" uid="uid://csvtm1e453it" path="res://Combat/SpellData.gd" id="1_d6yeb"]
+
+[resource]
+script = ExtResource("1_d6yeb")
+spell_name = "Steam Blast"
+damage = 15.0
+metadata/_custom_type_script = "uid://csvtm1e453it"
